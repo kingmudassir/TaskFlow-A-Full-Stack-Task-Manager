@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
 
 function Navbar() {
@@ -14,9 +15,11 @@ function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-linear-to-r from-teal-400 to-cyan-400 shadow-lg select-none">
-      <a href="#home" className="px-2 py-2">
+      <NavLink 
+      to="/"
+      className="px-2 py-2">
         <Logo />
-      </a>
+      </NavLink>
 
       <ul className="flex space-x-12 text-lg font-semibold text-white">
         {items_in_mid_navbar.map((item) => (
