@@ -7,6 +7,7 @@ import Signup from "./Pages/Signup"
 import config from "./config/config"
 import Landing from "./Pages/Landing"
 import { Routes, Route } from "react-router-dom";
+import Login from "./Pages/Login"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   )
 }
